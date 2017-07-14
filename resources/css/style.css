@@ -17,6 +17,7 @@ header {
     justify-content: space-between;
     height: 64px;
     width: 100%;
+    background-color:white;
     border: 3px dotted black;
 }
 .logo {
@@ -52,7 +53,59 @@ nav ul li {
 
 /* JUMBOTRON */
 .jumbotron {
+    display: flex;
+    flex-direction: row;
     height: auto;
     width: 100%;
     border: 3px dotted black;
+}
+.jumbo-image {
+    width: 60%;
+    margin: 32px 20px 32px 24px;
+    border: 3px solid blue;
+}
+.jumbo-image img {
+    width: 100%;
+}
+.jumbo-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin-left: 20px;
+    border: 3px solid blue;
+}
+.jumbo-content h1 {
+    display: block;
+    font-weight: bold;
+    font-size: 2.50rem;
+    width: 70%;
+}
+.jumbo-content h2 {
+    display: block;
+    font-weight: bold;
+    font-size: 1.25rem;
+    width: 70%;
+    margin-top: 2rem;
+}
+.jumbo-content .button {
+    text-align: center;
+    height: auto;
+    width: 70%;
+    margin-top: 2rem;
+    border-radius: 6px;
+    border: 3px solid red;
+}
+.button:hover {
+    background-color: blue;
+}
+.button span:hover {
+    color: white;
+}
+.jumbo-content .button span {
+    display: block;
+    font-size: 1.15rem;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
