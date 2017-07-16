@@ -10,6 +10,9 @@ body {
 a {
     color: black;
 }
+a:hover {
+    color: blue;
+}
 
 /* HEADER */
 header {
@@ -48,7 +51,8 @@ nav ul {
 }
 nav ul li {
     padding-right: 1rem;
-    font-size: 1.15rem;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 /* JUMBOTRON */
@@ -71,7 +75,7 @@ nav ul li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 40%;
     margin-left: 20px;
     border: 3px solid blue;
@@ -79,33 +83,103 @@ nav ul li {
 .jumbo-content h1 {
     display: block;
     font-weight: bold;
-    font-size: 2.50rem;
-    width: 70%;
+    font-size: 3.2vw;
+    line-height: 3.5vw;
+    /* width: 70%; */
 }
 .jumbo-content h2 {
     display: block;
     font-weight: bold;
-    font-size: 1.25rem;
-    width: 70%;
+    font-size: 2vw;
+    line-height: 2.5vw;
+    /* width: 70%; */
     margin-top: 2rem;
 }
 .jumbo-content .button {
     text-align: center;
     height: auto;
-    width: 70%;
+    width: 26vw;
     margin-top: 2rem;
     border-radius: 6px;
     border: 3px solid red;
+}
+.jumbo-content .button span {
+    display: block;
+    font-size: 2.2vw;
+    padding-top: 9px;
+    padding-bottom: 9px;
 }
 .button:hover {
     background-color: blue;
 }
 .button span:hover {
     color: white;
+    font-weight: bold;
 }
-.jumbo-content .button span {
+
+/* FEATURES */
+.features {
+    display: flex;
+    height: auto;
+    width: 100%;
+    border: 3px dotted black; 
+}
+.main-feature {
+    display: flex;
+    flex-direction: column;
+    margin: 32px 40px 32px 24px;
+    width: 60%;
+    border: 3px solid blue;
+}
+.main-feature img {
+    width: 100%;
+    margin-bottom: 32px;
+}
+.main-feature h2 {
+    font-size: 2.5vw;
+    font-weight: bold;
+    margin-bottom: 2vw;
+}
+.main-feature p {
+    font-size: 1.5vw;
+    line-height: 2vw;
+    margin-bottom: 2.5vw;
+}
+.main-feature span {
+    font-size: 1.25vw;
+}
+.feature-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    height: auto;
+    justify-content: center;
+    width: 40%;
+    border: 3px solid red;
+}
+.feature-list .feature {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    border: 3px solid blue;
+}
+.feature-list .feature img {
+    width: 35%;
+    margin: 16px;
+    border: 3px solid yellow;
+}
+.feature-list .feature .text-content {
+    border: 3px solid aqua;
+}
+.feature-list .feature .text-content h3 {
+    font-size: 2vw;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.feature-list .feature .text-content span {
     display: block;
-    font-size: 1.15rem;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    font-size: 1.25vw;
+    line-height: 1.5vw;
+    margin-bottom: 16px;
 }
