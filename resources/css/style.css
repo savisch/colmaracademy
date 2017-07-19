@@ -192,7 +192,7 @@ nav ul li {
     height: auto;
     border: 3px dotted black;
 }
-.education .education-heading {
+.education-heading {
     text-align: center;
     width: 100%;
     height: auto;
@@ -202,7 +202,7 @@ nav ul li {
     margin-bottom: 32px;
     border: 3px solid blue;
 }
-.education .catalog {
+.catalog {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -211,23 +211,23 @@ nav ul li {
     margin-right: 60px;
     border: 3px solid red;
 }
-.education .catalog .course {
+.catalog .course {
     width: 30%;
     margin-bottom: 16px;
     border: 3px solid blue;
 }
-.education .catalog .course img {
+.catalog .course img {
     width: 100%;
 }
-.education .catalog .course .description {
+.catalog .course .description {
     margin: 16px 16px 20px 16px;
 }
-.education .catalog .course .description h2 {
+.catalog .course .description h2 {
     font-size: 2vw;
     font-weight: bold;
     margin-bottom: 8px;
 }
-.education .catalog .course .description h3, p {
+.catalog .course .description h3, p {
     margin-bottom: 8px;
     font-size: 1.25vw;
 }
@@ -244,7 +244,7 @@ nav ul li {
     height: auto;
     border: 3px dotted black;
 }
-.exhibit .exhibit-heading {
+.exhibit-heading {
     text-align: center;
     width: 100%;
     height: auto;
@@ -254,56 +254,82 @@ nav ul li {
     margin-bottom: 32px;
     border: 3px solid blue;
 }
-.exhibit .exhibit-content {
+.exhibit-content {
     display: flex;
     width: 100%;
     height: auto;
     border: 3px solid red;
 }
-.exhibit .exhibit-content .exhibit-video {
+.exhibit-content .exhibit-video {
     width: 60%;
     margin: 32px 40px 32px 24px;
     border: 3px solid blue;
 }
-.exhibit .exhibit-content .exhibit-video video {
+.exhibit-content .exhibit-video video {
     width: 100%;
     margin-bottom: 24px;
 }
-.exhibit .exhibit-content .exhibit-video h3 {
+.exhibit-content .exhibit-video h3 {
     font-size: 2vw;
     font-weight: bold;
     margin-bottom: 24px; 
 }
-.exhibit .exhibit-content .exhibit-video p {
+.exhibit-content .exhibit-video p {
     font-size: 1.25vw;
     line-height: 2vw;
     margin-bottom: 2.5vw;  
 }
-.exhibit .exhibit-content .exhibit-list {
+.exhibit-content .exhibit-list {
     width: 45%;
     margin-top: 32px;
-    margin-bottom: 32p
+    margin-bottom: 32px;
     border: 3px solid red;
 }
-.exhibit .exhibit-content .exhibit-list .item {
+.exhibit-content .exhibit-list .item {
     display: flex;
     flex-direction: row;
     align-items: center;
     /* height: 168px; */
     border: 3px solid blue;
 }
-.exhibit .exhibit-content .exhibit-list .item img {
+.exhibit-content .exhibit-list .item img {
     width: 35%;
     margin: 16px;
     border: 3px solid yellow;
 }
-.exhibit .exhibit-content .exhibit-list .item .text-content h3 {
+.exhibit-content .exhibit-list .item .text-content h3 {
     margin-bottom: 8px;
     font-size: 2vw;
     font-weight: bold;
 }
-.exhibit .exhibit-content .exhibit-list .item .text-content span {
+.exhibit-content .exhibit-list .item .text-content span {
     font-size: 1.25vw;
     line-height: 2vw;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 1.5vw;
+    border: 3px dotted black;
+}
+footer span {
+    margin-left: 24px;
+    margin-bottom: 60px;
+    border: 3px solid blue;
+}
+footer .terms-privacy {
+    margin-right: 24px;
+    margin-bottom: 60px;
+    border: 3px solid blue;
+}
+footer .terms-privacy a {
+    padding-right: 8px;
 }
 
