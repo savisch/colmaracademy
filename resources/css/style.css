@@ -43,16 +43,44 @@ nav {
     width: auto;
     border: 3px solid blue;
 }
-nav ul {
+nav .desktop-nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
 }
-nav ul li {
+nav .desktop-nav li {
     padding-right: 1rem;
     font-size: 1.2rem;
     font-weight: 600;
+}
+nav .mobile-nav {
+    display: none;
+}
+
+@media only screen and (max-width: 815px) {
+    nav .desktop-nav {
+        display: none;
+    }
+    nav .mobile-nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    nav .mobile-nav li {
+        padding-right: 3rem; 
+         height: 100%; 
+        /* padding-top: 0;  */
+         padding-bottom: 0;  
+    }
+    nav .mobile-nav li img {
+        height: 65%;
+         /* margin-top: 0;  */
+         /* margin-bottom: 0;  */
+
+    }
+
 }
 
 /* JUMBOTRON */
@@ -101,6 +129,7 @@ nav ul li {
     margin-top: 2rem;
     border-radius: 6px;
     border: 3px solid red;
+    background-color: red;
 }
 .jumbo-content .button span {
     display: block;
@@ -114,6 +143,24 @@ nav ul li {
 .button span:hover {
     color: white;
     font-weight: bold;
+}
+
+@media only screen and (max-width: 1000px) {
+    .jumbo-image {
+        display: none;    
+    }
+    .jumbo-content {
+        background-image: url(../images/banner.jpg);
+        background-position: center;
+        background-size: cover;
+        height: auto;
+        width: 100%;
+        padding-top: 150px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        margin-right: 20px;
+        color: white;
+    }
 }
 
 /* FEATURES */
@@ -183,6 +230,12 @@ nav ul li {
     margin-bottom: 16px;
 }
 
+@media only screen and (max-width: 1000px) {
+    .feature-list .feature .text-content span {
+        display: none;
+    }
+}
+
 /* EDUCATION */
 .education {
     display: flex;
@@ -233,6 +286,12 @@ nav ul li {
 }
 #art .description {
      margin-bottom: 6px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .catalog .course {
+        width: 40%;
+    }
 }
 
 /* EXHIBIT */
@@ -332,4 +391,5 @@ footer .terms-privacy {
 footer .terms-privacy a {
     padding-right: 8px;
 }
+
 
