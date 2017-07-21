@@ -62,26 +62,32 @@ nav .mobile-nav {
     #tablet-nav {
         display: none;
     }
-    /* nav .mobile-nav {
+}
+@media only screen and (max-width: 675px) {
+    nav .desktop-nav {
+        display: none;
+    }
+    nav .mobile-nav {
         display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
+        align-items: center; 
+        /* justify-content: space-between; */
+     }
     nav .mobile-nav li {
         padding-right: 3rem; 
-         height: 100%; 
+        height: 100%;  
         /* padding-top: 0;  */
-         /* padding-bottom: 0;  
-    }
+        /* padding-bottom: 0;*/  
+     }
     nav .mobile-nav li img {
+        height: 55%;  
+         margin-top:.78rem;    
+        /* margin-bottom: 0;   */
+     } 
+    .logo img {
         height: 65%;
-          margin-top: 0;  
-          margin-bottom: 0;  
-
-    } */ 
-
-}
+    }
+}   
 
 /* JUMBOTRON */
 .jumbotron {
@@ -424,4 +430,3 @@ footer .terms-privacy a {
         font-size: 1.85vw;
     }
 }
-
