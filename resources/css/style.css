@@ -92,7 +92,7 @@ nav .mobile-nav {
         justify-content: center;
     }
     .logo {
-        margin-right: 12vw;
+        margin-right: 14vw;
         margin-left: 11vw;
     }
     nav .mobile-nav li {
@@ -198,7 +198,25 @@ nav .mobile-nav {
     }
     .jumbo-content {
         background-image: none;
+        align-items: center;
+        padding-top: 32px;
         color: black;
+    }
+    .jumbo-content h1 {
+        font-size: 7vw;
+        line-height: 8vw;
+        text-align: center;
+    }
+    .jumbo-content h2 {
+        font-size: 4vw;
+        line-height: 4vw;
+        text-align: center;
+    }
+    .jumbo-content .button {
+        width: 56vw;
+    }
+    .jumbo-content .button span {
+        font-size: 4vw;
     }
 }
 
