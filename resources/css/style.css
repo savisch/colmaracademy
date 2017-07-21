@@ -71,15 +71,15 @@ nav .mobile-nav {
         display: flex;
         flex-direction: row;
         align-items: center; 
-     }
+    }
     nav .mobile-nav li {
         padding-right: 3rem; 
         height: 100%;    
-     }
+    }
     nav .mobile-nav li img {
-        height: 55%;  
+        height: 60%;  
         margin-top:.78rem;    
-     } 
+    } 
     .logo img {
         height: 65%;
     }
@@ -92,11 +92,11 @@ nav .mobile-nav {
         justify-content: center;
     }
     .logo {
-        margin-right: 14vw;
-        margin-left: 11vw;
+        margin-right: 5rem;
+        margin-left: 4rem;
     }
     nav .mobile-nav li {
-        padding-right: 12vw;
+        padding-right: 5rem;     
     }
 
 }   
@@ -323,13 +323,19 @@ nav .mobile-nav {
         flex-direction: column;
         align-items: flex-start;
     }
-    .feature-list .feature .text-content h3 {
-        font-size: 5vw;
+    .features .feature-list .feature .text-content {
+        margin-left: 16px;
     }
-    .feature-list .feature .text-content span, a {
+    .feature-list .feature .text-content h3 {
+        font-size: 4.5vw;
+    }
+    .feature-list .feature .text-content span {
         display: block;
-        font-size: 3.5vw;
+        font-size: 3.25vw;
         line-height: 4vw;
+    }
+    .feature-list .feature .text-content a {
+        font-size: 3.25vw;
     }
 }
 
@@ -394,6 +400,34 @@ nav .mobile-nav {
     }
     .catalog .course .description h3, p {
         font-size: 1.5vw;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .education-heading {
+        font-size: 6vw;
+    }
+    .catalog .course img {
+        display: none;
+    }
+    .catalog .course h3 {
+        display: none;
+    }
+    .catalog .course p {
+        display: none;
+    }
+    .catalog .course {
+        width: 85%;
+        text-align: center;
+    }
+    .catalog {
+        flex-direction: column;
+        width: 95%;
+    }
+    #art .description h2 {
+        margin-bottom: 16px;
+    }
+    .catalog .course .description h2 {
+        font-size: 4vw;
     }
 }
 
@@ -482,6 +516,9 @@ nav .mobile-nav {
     .exhibit-content .exhibit-list .item .text-content span {
         font-size: 1.5vw;
     }
+}
+@media only screen and (max-width: 600px) {
+
 }
 
 /* FOOTER */
