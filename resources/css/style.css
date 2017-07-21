@@ -59,10 +59,10 @@ nav .mobile-nav {
 }
 
 @media only screen and (max-width: 815px) {
-    nav .desktop-nav {
+    #tablet-nav {
         display: none;
     }
-    nav .mobile-nav {
+    /* nav .mobile-nav {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -72,14 +72,14 @@ nav .mobile-nav {
         padding-right: 3rem; 
          height: 100%; 
         /* padding-top: 0;  */
-         padding-bottom: 0;  
+         /* padding-bottom: 0;  
     }
     nav .mobile-nav li img {
         height: 65%;
-         /* margin-top: 0;  */
-         /* margin-bottom: 0;  */
+          margin-top: 0;  
+          margin-bottom: 0;  
 
-    }
+    } */ 
 
 }
 
@@ -234,6 +234,12 @@ nav .mobile-nav {
     .feature-list .feature .text-content span {
         display: none;
     }
+    .main-feature p {
+        font-size: 1.75vw;
+    } 
+    .main-feature span {
+        font-size: 1.5vw;
+    }
 }
 
 /* EDUCATION */
@@ -291,6 +297,12 @@ nav .mobile-nav {
 @media only screen and (max-width: 1000px) {
     .catalog .course {
         width: 40%;
+    }
+     .catalog .course .description h2 {
+        font-size: 2.25vw;
+    }
+    .catalog .course .description h3, p {
+        font-size: 1.5vw;
     }
 }
 
@@ -366,6 +378,21 @@ nav .mobile-nav {
     line-height: 2vw;
 }
 
+@media only screen and (max-width: 1000px) {
+    .exhibit-content .exhibit-video h3 {
+        font-size: 2.25vw;
+    }
+    .exhibit-content .exhibit-video p {
+        font-size: 1.6vw;
+    }
+    .exhibit-content .exhibit-list .item .text-content h3 {
+        font-size: 2.25vw;
+    }
+    .exhibit-content .exhibit-list .item .text-content span {
+        font-size: 1.5vw;
+    }
+}
+
 /* FOOTER */
 footer {
     display: flex;
@@ -392,4 +419,9 @@ footer .terms-privacy a {
     padding-right: 8px;
 }
 
+@media only screen and (max-width: 1000px) {
+    footer {
+        font-size: 1.85vw;
+    }
+}
 
