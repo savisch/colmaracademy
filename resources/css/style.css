@@ -251,6 +251,9 @@ nav .mobile-nav {
 .main-feature span {
     font-size: 1.25vw;
 }
+.feature-list .feature .info-mobile {
+    display: none;
+}
 .feature-list {
     display: flex;
     flex-direction: column;
@@ -303,6 +306,7 @@ nav .mobile-nav {
         display: none;
     }
     .feature-list .feature .info-mobile {
+        display: block;
         margin-left: 0;
         width: 100%;
     }
