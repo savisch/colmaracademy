@@ -298,6 +298,36 @@ nav .mobile-nav {
         font-size: 1.5vw;
     }
 }
+@media only screen and (max-width: 600px) {
+    .feature-list .feature .info {
+        display: none;
+    }
+    .feature-list .feature .info-mobile {
+        margin-left: 0;
+        width: 100%;
+    }
+    .features {
+        justify-content: center;
+    }
+    .main-feature {
+        display: none;
+    }
+    .features .feature-list {
+        width: 85%;
+    }
+    .features .feature-list .feature {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .feature-list .feature .text-content h3 {
+        font-size: 5vw;
+    }
+    .feature-list .feature .text-content span, a {
+        display: block;
+        font-size: 3.5vw;
+        line-height: 4vw;
+    }
+}
 
 /* EDUCATION */
 .education {
