@@ -1,9 +1,9 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
-.grey {
-    color: gray;
-}
+ .grey { 
+     color: #5c5c3d; 
+} 
 .normal {
     font-weight: normal;
 }
@@ -20,8 +20,7 @@ header {
     justify-content: space-between;
     height: 64px;
     width: 100%;
-    background-color:white;
-    border: 3px dotted black;
+    /* border: 3px dotted black; */
 }
 .logo {
     display: flex;
@@ -31,7 +30,7 @@ header {
     font-weight: bold;
     font-size: 1.35rem;
     margin-left: 24px;
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
 }
 .logo img {
     height: 85%;
@@ -41,7 +40,7 @@ nav {
     display: flex;
     height: 100%;
     width: auto;
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
 }
 nav .desktop-nav {
     display: flex;
@@ -50,7 +49,7 @@ nav .desktop-nav {
     justify-content: space-around;
 }
 nav .desktop-nav li {
-    padding-right: 1rem;
+    padding-right: 1.65rem;
     font-size: 1.2rem;
     font-weight: 600;
 }
@@ -107,12 +106,13 @@ nav .mobile-nav {
     flex-direction: row;
     height: auto;
     width: 100%;
-    border: 3px dotted black;
+    /* border: 3px dotted black; */
 }
 .jumbo-image {
     width: 60%;
-    margin: 32px 20px 32px 24px;
-    border: 3px solid blue;
+    margin: 0px 24px 32px 24px;
+    border: 3px double #5c5c3d;
+    /* border: 3px solid blue; */
 }
 .jumbo-image img {
     width: 100%;
@@ -124,14 +124,13 @@ nav .mobile-nav {
     align-items: flex-start;
     width: 40%;
     margin-left: 20px;
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
 }
 .jumbo-content h1 {
     display: block;
     font-weight: bold;
     font-size: 3.2vw;
     line-height: 3.5vw;
-    /* width: 70%; */
 }
 .jumbo-content h2 {
     display: block;
@@ -146,8 +145,10 @@ nav .mobile-nav {
     width: 26vw;
     margin-top: 2rem;
     border-radius: 6px;
-    border: 3px solid red;
-    background-color: red;
+    color: white;
+    border: 3px double #5c5c3d;
+    background-color: #3d3d29;
+    background-image: radial-gradient(#6b6b47, #0f0f0a);
 }
 .jumbo-content .button span {
     display: block;
@@ -156,14 +157,18 @@ nav .mobile-nav {
     padding-bottom: 9px;
 }
 .button:hover {
-    background-color: blue;
+    background-color: #5c5c3d;
+    background-image: radial-gradient(circle, #e0e0d1, #1f1f14);
 }
 .button span:hover {
-    color: white;
-    font-weight: bold;
+    color: black;
+    /* font-weight: bold; */
 }
 
 @media only screen and (max-width: 1000px) {
+    .jumbotron {
+        padding-bottom: 32px;
+    }
     .jumbo-image {
         display: none;    
     }
@@ -178,6 +183,7 @@ nav .mobile-nav {
         padding-left: 20px;
         margin-right: 20px;
         color: white;
+        border: 3px double #5c5c3d;
     }
 }
 @media only screen and (max-width: 600px) {
@@ -189,18 +195,19 @@ nav .mobile-nav {
         display: none;
     }
     .mobile-banner {
-        /* display: block; */
         background-image: url(../images/banner.jpg);
         width: 100%;
         height: 180px;
         background-position: center;
-        border: 3px solid red;
+        border: 3px double #5c5c3d;
+        /* border: 3px solid red; */
     }
     .jumbo-content {
         background-image: none;
         align-items: center;
         padding-top: 32px;
         color: black;
+        border: none;
     }
     .jumbo-content h1 {
         font-size: 7vw;
@@ -225,18 +232,19 @@ nav .mobile-nav {
     display: flex;
     height: auto;
     width: 100%;
-    border: 3px dotted black; 
+    /* border: 3px dotted black;  */
 }
 .main-feature {
     display: flex;
     flex-direction: column;
     margin: 32px 40px 32px 24px;
     width: 60%;
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
 }
 .main-feature img {
     width: 100%;
     margin-bottom: 32px;
+    border: 3px double #5c5c3d;
 }
 .main-feature h2 {
     font-size: 2.5vw;
@@ -257,26 +265,28 @@ nav .mobile-nav {
 .feature-list {
     display: flex;
     flex-direction: column;
-    margin-top: 32px;
+    margin-top: 6px;
     height: auto;
     justify-content: center;
     width: 40%;
-    border: 3px solid red;
+    /* border: 3px solid red; */
 }
 .feature-list .feature {
     display: flex;
     align-items: center;
     width: 100%;
     height: auto;
-    border: 3px solid blue;
+    padding-bottom: 10px;
+    /* border: 3px solid blue; */
 }
 .feature-list .feature img {
     width: 35%;
     margin: 16px;
-    border: 3px solid yellow;
+    border: 3px double #5c5c3d;
+    /* border: 3px solid yellow; */
 }
 .feature-list .feature .text-content {
-    border: 3px solid aqua;
+    /* border: 3px solid aqua; */
 }
 .feature-list .feature .text-content h3 {
     font-size: 2vw;
@@ -322,12 +332,14 @@ nav .mobile-nav {
     .features .feature-list .feature {
         flex-direction: column;
         align-items: flex-start;
+        padding-bottom: 24px;
     }
     .features .feature-list .feature .text-content {
         margin-left: 16px;
     }
     .feature-list .feature .text-content h3 {
         font-size: 4.5vw;
+        padding-top: 0;
     }
     .feature-list .feature .text-content span {
         display: block;
@@ -346,7 +358,7 @@ nav .mobile-nav {
     align-items: center;
     width: 100%;
     height: auto;
-    border: 3px dotted black;
+    /* border: 3px dotted black; */
 }
 .education-heading {
     text-align: center;
@@ -355,8 +367,8 @@ nav .mobile-nav {
     font-size: 3.2vw;
     font-weight: bold;
     margin-top: 64px;
-    margin-bottom: 32px;
-    border: 3px solid blue;
+    margin-bottom: 2.75vw;
+    /* border: 3px solid blue; */
 }
 .catalog {
     display: flex;
@@ -365,15 +377,17 @@ nav .mobile-nav {
     flex-wrap: wrap;
     margin-left: 60px;
     margin-right: 60px;
-    border: 3px solid red;
+    /* border: 3px solid red; */
 }
 .catalog .course {
     width: 30%;
     margin-bottom: 16px;
-    border: 3px solid blue;
+
+    /* border: 3px solid blue; */
 }
 .catalog .course img {
     width: 100%;
+    border: 3px double #5c5c3d;
 }
 .catalog .course .description {
     margin: 16px 16px 20px 16px;
@@ -405,6 +419,7 @@ nav .mobile-nav {
 @media only screen and (max-width: 600px) {
     .education-heading {
         font-size: 6vw;
+        margin-bottom: 4vw;
     }
     .catalog .course img {
         display: none;
@@ -418,6 +433,7 @@ nav .mobile-nav {
     .catalog .course {
         width: 85%;
         text-align: center;
+        border: 3px double #5c5c3d;
     }
     .catalog {
         flex-direction: column;
@@ -438,7 +454,7 @@ nav .mobile-nav {
     align-items: center;
     width: 100%;
     height: auto;
-    border: 3px dotted black;
+    /* border: 3px dotted black; */
 }
 .exhibit-heading {
     text-align: center;
@@ -447,28 +463,30 @@ nav .mobile-nav {
     font-size: 3.2vw;
     font-weight: bold;
     margin-top: 64px;
-    margin-bottom: 32px;
-    border: 3px solid blue;
+    margin-bottom: 0px;
+    /* border: 3px solid blue; */
 }
 .exhibit-content {
     display: flex;
     width: 100%;
     height: auto;
-    border: 3px solid red;
+    /* border: 3px solid red; */
 }
 .exhibit-content .exhibit-video {
     width: 60%;
-    margin: 32px 40px 32px 24px;
-    border: 3px solid blue;
+    margin: 16px 40px 32px 24px;
+    /* border: 3px solid blue; */
 }
 .exhibit-content .exhibit-video video {
     width: 100%;
-    margin-bottom: 24px;
+    margin-top: 1.18vw;
+    margin-bottom: 1.18vw;
+    border: 3px double #5c5c3d;
 }
 .exhibit-content .exhibit-video h3 {
     font-size: 2vw;
     font-weight: bold;
-    margin-bottom: 24px; 
+    margin-bottom: 1.18vw; 
 }
 .exhibit-content .exhibit-video p {
     font-size: 1.25vw;
@@ -477,21 +495,22 @@ nav .mobile-nav {
 }
 .exhibit-content .exhibit-list {
     width: 45%;
-    margin-top: 32px;
+    margin-top: 16px;
     margin-bottom: 32px;
-    border: 3px solid red;
+    /* border: 3px solid red; */
 }
 .exhibit-content .exhibit-list .item {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* height: 168px; */
-    border: 3px solid blue;
+    margin-bottom: .55vw;
+    /* border: 3px solid blue; */
 }
 .exhibit-content .exhibit-list .item img {
-    width: 35%;
-    margin: 16px;
-    border: 3px solid yellow;
+    width: 33%;
+    margin: 1.18vw;
+    border: 3px double #5c5c3d;
+    /* border: 3px solid yellow; */
 }
 .exhibit-content .exhibit-list .item .text-content h3 {
     margin-bottom: 8px;
@@ -520,6 +539,7 @@ nav .mobile-nav {
 @media only screen and (max-width: 600px) {
     .exhibit-heading {
         font-size: 6vw;
+        margin-bottom: 3vw;
     }
     .exhibit-list {
         display: none;
@@ -551,17 +571,17 @@ footer {
     justify-content: space-between;
     margin-top: 20px;
     font-size: 1.5vw;
-    border: 3px dotted black;
+    /* border: 3px dotted black; */
 }
 footer span {
     margin-left: 24px;
     margin-bottom: 60px;
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
 }
 footer .terms-privacy {
     margin-right: 24px;
     margin-bottom: 60px;
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
 }
 footer .terms-privacy a {
     padding-right: 8px;
