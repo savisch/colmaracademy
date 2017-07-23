@@ -518,6 +518,26 @@ nav .mobile-nav {
     }
 }
 @media only screen and (max-width: 600px) {
+    .exhibit-heading {
+        font-size: 6vw;
+    }
+    .exhibit-list {
+        display: none;
+    }
+    .exhibit-content {
+        width: 95%;
+        justify-content: center;
+    }
+    .exhibit-content .exhibit-video {
+        width: 100%;
+        margin: 0;
+    }
+    .exhibit-content .exhibit-video h3 {
+        display: none;
+    }
+    .exhibit-content .exhibit-video p {
+        display: none;
+    }
 
 }
 
@@ -550,5 +570,19 @@ footer .terms-privacy a {
 @media only screen and (max-width: 1000px) {
     footer {
         font-size: 1.85vw;
+    }
+}
+@media only screen and (max-width: 600px) {
+    footer {
+        font-size: 2.75vw;
+    }
+}
+@media only screen and (max-width: 480px) {
+    footer .terms-privacy {
+        display: none;
+    }
+    footer {
+        font-size: 3.5vw;
+        justify-content: center;
     }
 }
