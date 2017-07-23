@@ -237,13 +237,13 @@ nav .mobile-nav {
 .main-feature {
     display: flex;
     flex-direction: column;
-    margin: 32px 40px 32px 24px;
+    margin: 2.75vw 40px 32px 24px;
     width: 60%;
     /* border: 3px solid blue; */
 }
 .main-feature img {
     width: 100%;
-    margin-bottom: 32px;
+    margin-bottom: 3vw;
     border: 3px double #5c5c3d;
 }
 .main-feature h2 {
@@ -254,7 +254,7 @@ nav .mobile-nav {
 .main-feature p {
     font-size: 1.5vw;
     line-height: 2vw;
-    margin-bottom: 2.5vw;
+    margin-bottom: 1.75vw;
 }
 .main-feature span {
     font-size: 1.25vw;
@@ -265,7 +265,7 @@ nav .mobile-nav {
 .feature-list {
     display: flex;
     flex-direction: column;
-    margin-top: 6px;
+    margin-top: .5vw;
     height: auto;
     justify-content: center;
     width: 40%;
@@ -276,7 +276,7 @@ nav .mobile-nav {
     align-items: center;
     width: 100%;
     height: auto;
-    padding-bottom: 10px;
+    padding-bottom: .75vw;
     /* border: 3px solid blue; */
 }
 .feature-list .feature img {
@@ -301,6 +301,12 @@ nav .mobile-nav {
 }
 
 @media only screen and (max-width: 1000px) {
+    .main-feature {
+        margin-top: 3vw;
+    }
+    .feature-list {
+        margin-top: 0vw;
+    }
     .feature-list .feature .text-content span {
         display: none;
     }
