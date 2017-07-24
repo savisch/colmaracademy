@@ -83,6 +83,11 @@ nav .mobile-nav {
     .logo img {
         height: 65%;
     }
+    nav .mobile-nav img:hover {
+        border: 3px double #a3a3c2;
+        border-radius: 6px;
+        background-image: radial-gradient(circle, #e0e0d1, #1f1f14);;
+    }
 }
 @media only screen and (max-width: 600px) {
     .logo span {
@@ -101,7 +106,6 @@ nav .mobile-nav {
     #login {
         padding-right: 11vw;
     }
-
 }   
 
 /* JUMBOTRON */
