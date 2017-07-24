@@ -93,7 +93,7 @@ nav .mobile-nav {
     }
     .logo {
         margin-right: 11vw;
-        margin-left: 4rem;
+        margin-left: 11vw;
     }
     nav .mobile-nav li {
         padding-right: 11vw;     
@@ -213,6 +213,7 @@ nav .mobile-nav {
         padding-top: 32px;
         color: black;
         border: none;
+        margin-left: 0px;
     }
     .jumbo-content h1 {
         font-size: 7vw;
@@ -334,6 +335,7 @@ nav .mobile-nav {
     }
     .features {
         justify-content: center;
+        margin-left: 4px;
     }
     .main-feature {
         display: none;
@@ -450,6 +452,7 @@ nav .mobile-nav {
         flex-direction: column;
         width: 95%;
         align-items: center;
+        margin-right: 50px;
     }
     #art .description h2 {
         margin-bottom: 16px;
@@ -549,6 +552,9 @@ nav .mobile-nav {
     }
 }
 @media only screen and (max-width: 600px) {
+    .exhibit {
+        margin-left: 4px;
+    }
     .exhibit-heading {
         font-size: 6vw;
         margin-bottom: 3vw;
