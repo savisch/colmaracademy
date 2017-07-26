@@ -11,7 +11,9 @@ a {
     color: black;
 }
 a:hover {
-    color: blue;
+    color: #a3a3c2;
+    font-weight: 700;
+    text-shadow: 1px 1px black;
 }
 
 
@@ -86,7 +88,7 @@ nav .mobile-nav {
     nav .mobile-nav img:hover {
         border: 3px double #a3a3c2;
         border-radius: 6px;
-        background-image: radial-gradient(circle, #e0e0d1, #1f1f14);;
+        background-image: radial-gradient(circle, #e0e0d1, #1f1f14);
     }
 }
 @media only screen and (max-width: 600px) {
@@ -158,8 +160,10 @@ nav .mobile-nav {
     background-color: #3d3d29;
     background-image: radial-gradient(#6b6b47, #0f0f0a);
 }
-.jumbo-content .button span {
+.jumbo-content .button a {
     display: block;
+    color: white;
+    text-decoration: none;
     font-size: 2.2vw;
     padding-top: 9px;
     padding-bottom: 9px;
@@ -168,9 +172,10 @@ nav .mobile-nav {
     background-color: #5c5c3d;
     background-image: radial-gradient(circle, #e0e0d1, #1f1f14);
 }
-.button span:hover {
+.button a:hover {
     color: black;
     font-weight: bold;
+    text-shadow: none;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -232,8 +237,8 @@ nav .mobile-nav {
     .jumbo-content .button {
         width: 56vw;
     }
-    .jumbo-content .button span {
-        font-size: 4vw;
+    .jumbo-content .button a {
+        font-size: 4.25vw;
     }
 }
 
@@ -310,6 +315,13 @@ nav .mobile-nav {
     line-height: 1.5vw;
     margin-bottom: 16px;
 }
+.feature-list .feature .text-content a {
+    font-weight: bolder;
+    font-size: 1.65vw;
+}
+.feature-list .feature .text-content a:hover {
+    text-shadow: 1px 1px black;
+}
 
 @media only screen and (max-width: 1000px) {
     .main-feature {
@@ -320,6 +332,9 @@ nav .mobile-nav {
     }
     .feature-list .feature .text-content span {
         display: none;
+    }
+    .feature-list .feature .text-content a {
+        font-size: 1.75vw;
     }
     .main-feature p {
         font-size: 1.75vw;
@@ -400,6 +415,7 @@ nav .mobile-nav {
 .catalog .course {
     width: 30%;
     margin-bottom: 16px;
+    /* font-weight: bold; */
     /* border: 3px solid blue; */
 }
 .catalog .course img {
@@ -411,7 +427,6 @@ nav .mobile-nav {
 }
 .catalog .course .description h2 {
     font-size: 2vw;
-    font-weight: bold;
     margin-bottom: 8px;
 }
 .catalog .course .description h3, p {
@@ -451,6 +466,15 @@ nav .mobile-nav {
         width: 85%;
         text-align: center;
         border: 3px double #5c5c3d;
+        border-radius: 6px;
+        border: 3px double #a3a3c2;
+        background-color: #3d3d29;
+        background-image: radial-gradient(#6b6b47, #0f0f0a);
+    }
+    .catalog .course:hover {
+        background-color: #5c5c3d;
+        background-image: radial-gradient(circle, #e0e0d1, #1f1f14);
+        color: black;
     }
     .catalog {
         flex-direction: column;
@@ -461,8 +485,17 @@ nav .mobile-nav {
     #art .description h2 {
         margin-bottom: 16px;
     }
-    .catalog .course .description h2 {
-        font-size: 4vw;
+    .catalog .course .description a{
+        color: white;
+        text-decoration: none;
+        font-size: 3.9vw;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .catalog .course .description a:hover {
+        color: black;
+        font-weight: bold;
+        text-shadow: none;
     }
 }
 
@@ -607,6 +640,10 @@ footer .terms-privacy {
 }
 footer .terms-privacy a {
     padding-right: 8px;
+    font-weight: bolder;
+}
+footer .terms-privacy a:hover {
+    text-shadow: 1px 1px black;
 }
 
 @media only screen and (max-width: 1000px) {
